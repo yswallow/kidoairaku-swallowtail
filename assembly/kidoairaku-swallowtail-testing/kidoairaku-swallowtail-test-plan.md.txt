@@ -1,0 +1,32 @@
+## Product information
+
+very bright, colorful, cute keyboard
+
+## Tools for the test
+
+|   Equipment  | Qty |    Comment    |
+|--------------|-----|---------------| 
+| Computer     |  1  | to running OS |
+| USB-C cable  |  1  |               |
+| Test fixture |  1  |               |
+
+## Program Files
+
+1. XIAO_LED_Test.uf2
+
+## Test plan
+
+1. Flash application
+    1. Press "B" (right) button on Seeed XIAO on the test fixture.
+    2. Connect the Seeed XIAO to the computer by the USB-C cable (while pressing "B" button on XIAO).
+    3. Release the "B" button
+    4. "RPI-RP2" drive appears.
+    5. Copy XIAO_LED_Test.uf2 to the RPI-RP2 drive.
+    
+2. Check the last LED (D260) shining.
+    - If all the LEDs not shining, check U1 and D98.
+    - If some LEDs are shining and other LEDs aren't, check soldering on most left shining LED on most under shining row.
+
+3. When D260 ( and all the LEDs ) shining, test pass.
+
+
